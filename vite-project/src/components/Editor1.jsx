@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import {Editor as ClassicEditor}  from 'ckeditor5-custom-build/build/ckeditor';
+import Editor  from 'ckeditor5-custom-build/build/ckeditor';
 const Editor1=()=> {
     
         return (
             <div className="App">
                 <h2>Using CKEditor 5 build in React</h2>
                 <CKEditor
-                    editor={ ClassicEditor }
+                    editor={ Editor }
                     data="<p>Hello from CKEditor 5!</p>"
                     onReady={ editor => {
                         // Allows you to store the editor instance and use it later.
